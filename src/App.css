@@ -1,0 +1,230 @@
+/*
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*/
+html{
+  background: rgb(247,159,100);
+background: linear-gradient(163deg, rgba(247,159,100,1) 22%, rgba(231,93,221,1) 62%, rgba(143,79,254,1) 87%);
+min-height: 100vh;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.App {
+  text-align: center;
+  
+}
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+
+}
+.section{
+  width: 50%;
+}
+.form{
+  background-color: #FFFFFF;
+  padding: 16px 24px;
+  border-radius: 10px;
+}
+.section_form_datos{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 16px;
+}
+.btn_submit{
+  
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: coral;
+  color:white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1em;
+  border: none;
+  padding: 8px 16px;
+  transition: 300ms;
+}
+.section_form_datos input, .section_form_datos textarea{
+  width: 80%;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 5px;
+  font-size: 1em;
+}
+.btn_submit:hover{
+  background-color: purple;
+}
+.box_error{
+  background-color:#ff2055 ;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 5px 10px;
+
+}
+.text_white{
+  color: #ffffff;
+}
+.box-gatito{
+  background-color: white;
+  width: 100%;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 20px 0 20px 16px ;
+}
+.box-gatito .title{
+  font-weight: bold;
+  color: brown;
+}
+.box-buttons{
+  display: flex;
+  column-gap: 10px;
+}
+.btn_editar{
+  background-color: #00cede;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 1.25em;
+  transition: 200ms;
+}
+.btn_editar:hover{
+  background-color: #00a1ae;
+}
+.btn_eliminar{
+  background-color: #db0000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 1.25em;
+  transition: 200ms;
+}
+.btn_editar:hover{
+  background-color: #00a1ae;
+}
+.f-bold{
+  font-weight: bold;
+}
+.kitty_background{
+  position: fixed;
+  bottom: 0;
+  left: 25%;
+  transform: translateX(-25%);
+}
+.gatitoFondo{
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  left: 25%;
+  transform: translateX(-25%);
+}
+.btn_eliminar:hover{
+  background-color:#aa0000;
+}
+.box_title{
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 18px;
+}
+.cat_title{
+  width: 80px;
+  height: 80px;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.box_form{
+  width: 80%;
+}
+/*MOBILE*/
+@media screen and (max-width: 600px){
+  .container{
+    flex-direction: column;
+  }
+  .section{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .box_form{
+    margin: 0 auto;
+  }
+  .box-gatito{
+    width: 95%;
+  }
+  .box_form{
+    width: 90%;
+  }
+  .section_form_datos input, .section_form_datos textarea{
+    width: 95%;
+  }
+  .kitty_background{
+    left: 80%;
+    transform: translateX(-80%);
+  }
+  .gatitoFondo{
+    width: 80px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1200px){
+  .container{
+    width: 95%;
+    margin: 0 auto;
+  }
+  .box-gatito{
+    width: 90%;
+  }
+  .box_form{
+    width: 90%;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
