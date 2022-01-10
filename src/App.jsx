@@ -26,15 +26,15 @@ function App() {
   }
 
   const fotos={
-    gatitoFondo: "",
-    catTitle:"",
+    gatitoFondo: "https://storage.cloud.google.com/first_images/cat_2_1.png",
+    catTitle:"https://storage.cloud.google.com/first_images/cat_sticker_2.png",
   }
 
   return (
     <div className="App">
       <div className='box_title'>
       <h2 className='title text_white'>Registra a tu Gatito</h2>
-      <img className='cat_title' src="\src\img\cat_sticker_2.png" alt="" />
+      <img className='cat_title' src={fotos.catTitle} alt="" />
       </div>
       <div className='container'>
         <div className="section">
@@ -55,7 +55,7 @@ function App() {
             />
         </div>
         <div className='kitty_background'>
-          <img className='gatitoFondo' src="\src\img\cat_2_1.png" alt="" />
+          <img className='gatitoFondo' src={fotos.gatitoFondo} alt="" />
         </div>
       </div>
     </div>
